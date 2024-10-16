@@ -7,7 +7,7 @@ textarea {
   background: var(--input-base);
   color: var(--input-placeholder);
   padding: 13px 16px;
-  
+
 
 }
 
@@ -15,20 +15,24 @@ label {
   display: flex;
   font: var(--body-sm);
   color: var(--text-body);
-  margin-bottom: 12px;
 }
 
 .input-wrapper {
   display: grid;
   width: 100%;
- 
+
+  & label {
+    
+  }
+
   & input {
     height: 48px;
-    
 
-    &::-webkit-calendar-picker-indicator { /*tirar desenho calendario*/
+
+    &::-webkit-calendar-picker-indicator {
+      /*tirar desenho calendario*/
       opacity: 0;
-    
+
     }
 
   }
@@ -38,13 +42,14 @@ label {
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
 
- }
+}
 
 input:focus,
 textarea:focus,
 input[type="datetime-local"]:focus {
   color: var(--text-heading);
-  outline: 1px solid var(--brand-light);   /*aplica a cor ao redor do inputdo lado de fora-- quando clicar*/
+  outline: 1px solid var(--brand-light);
+  /*aplica a cor ao redor do inputdo lado de fora-- quando clicar*/
 
   outline-offset: .1px;
   /*para funcionar as cores acima no navegador safari*/

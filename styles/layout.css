@@ -78,4 +78,8 @@ main {
     color: var(--text-heading);
   
   }
+
+  .title_input{
+    margin: 16px 0px 12px 0px;
+}
 }

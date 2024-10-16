@@ -1,0 +1,26 @@
+legend {
+
+  font: var(--heading-sm);
+}
+
+
+fieldset{
+  border: none;
+  display: grid;
+  gap: 12px;
+}
+
+/*padrao titulos dos inputs*/
+.title {
+  display: block; /*para mexer na margem*/
+   margin-top: 24px;
+ }
+
+ 
+.flex-title{
+display: flex;
+gap: 12px;
+margin-top: 42px;
+align-items: center;
+
+}

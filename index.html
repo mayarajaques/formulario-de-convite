@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Convite</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="app">
+    <aside>
+      <div class="aside-container">
+        <img src="assets/image/Logo.svg" alt="logo de festa">
+        <h1>Festivite</h1>
+        <p>Crie um convite digital para o seu evento</p>
+      </div>
+
+    </aside>
+
+    <main>
+      <div class="main-container">
+        <div>
+          <p>Crie seu convite</p>
+        </div>
+        <div>
+
+          <form method="post">
+            <fieldset class="event-info">
+              <div class="flex-title">
+                <img src="assets/image/icon/calendario.svg" alt="icone de calendario">
+                <legend>Sobre o evento</legend>
+              </div>
+
+              <div class="input-wrapper">
+                <label class="title" for="title">Titulo</label>
+                <input id="title" name="title" type="text" placeholder="Nome do evento">
+              </div>
+
+              <div class="input-wrapper grid-date">
+                <div>
+                  <label for="data_inicio">Início</label>
+                  <input id="data_inicio" name="data_inicio" type="datetime-local" lang="pt-br">
+                </div>
+
+                <div>
+                  <label for="data_fim">Fim</label>
+                  <input id="data_fim" name="data_fim" type="datetime-local" lang="pt-br">
+                </div>
+              </div>
+
+              <div>
+                <label>Tipo</label>
+              </div>
+
+              <div class="radio-wrapper">
+                <input type="radio" name="type" value="present">
+                <div>
+                  <img src="assets/image/icon/presencial.svg" alt="icone de prédio">
+                </div>
+                <label for="present">Presencial</label>
+              </div>
+
+              <div class="radio-wrapper">
+                <input type="radio" name="type" value="online">
+                <div>
+                  <img src="assets/image/icon/online.svg" alt="icone de reuniao online">
+                </div>
+                <label for="online">Online</label>
+              </div>
+     
+
+     
+
+
+        <div class="input-wrapper">
+          <label for="adress">Local</label>
+          <input id="adress" name="adress" type="text">
+        </div>
+
+        <div class="description">
+          <label for="description">Descrição</label>
+          <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+
+
+        </div>
+
+      </div>
+
+  </div>
+
+  </fieldset>
+  </form>
+  </div>
+  </div>
+  </main>
+
+
+  </div>
+
+</body>
+
+</html>

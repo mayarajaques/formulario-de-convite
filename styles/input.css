@@ -7,24 +7,24 @@ textarea {
   background: var(--input-base);
   color: var(--input-placeholder);
   padding: 13px 16px;
-
-
+  
+  
 }
 
 label {
   display: flex;
   font: var(--body-sm);
   color: var(--text-body);
+  margin: 16px 0px 12px; /*margin padrao das labels*/
 }
 
+
+  /*configs inputs*/
 .input-wrapper {
   display: grid;
   width: 100%;
-
-  & label {
-    
-  }
-
+  
+  
   & input {
     height: 48px;
 
@@ -38,10 +38,10 @@ label {
   }
 }
 
+/*config input date*/
 .grid-date {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-
+  grid-template-columns: 272px 272px;
+  
 }
 
 input:focus,
@@ -55,3 +55,7 @@ input[type="datetime-local"]:focus {
   /*para funcionar as cores acima no navegador safari*/
 
 }
+
+
+
+

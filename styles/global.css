@@ -63,3 +63,15 @@ img{
   max-width: 100%; /*imagem se encaixar no tamanho da tela*/
   height: auto;
  }
+
+ 
+
+ .flex-2 { /*separação em duas colunas*/
+  display: flex;
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+
+}
+
+.gap { /*gap padrão*/
+  gap: 16px;
+}

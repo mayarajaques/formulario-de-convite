@@ -10,9 +10,8 @@
   /*garantindo novamente para n ter rolagem*/
 
 }
-p {
 
-}
+
 aside {
   /*toda a caixa*/
   /*tamanho container*/
@@ -48,7 +47,7 @@ aside {
   & p {
     font: var(--body-md);
     color: var(--text-heading);
-    
+
   }
 
   & p,
@@ -68,7 +67,7 @@ main {
   height: 100%;
 
   & .main-container {
-    max-width: 25rem;
+    max-width: 560px;
     /*maximo ocupação da pagina*/
 
   }
@@ -76,10 +75,8 @@ main {
   p {
     font: var(--heading-md);
     color: var(--text-heading);
-  
+
   }
 
-  .title_input{
-    margin: 16px 0px 12px 0px;
-}
+
 }

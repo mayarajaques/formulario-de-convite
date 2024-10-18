@@ -1,0 +1,80 @@
+
+
+/* Container do switch */
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* Espaçamento entre o switch e o texto "Escuro" */
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+
+/* Esconde o input checkbox */
+
+
+/* Estilo da imagem (switch visual) */
+.switch-image {
+  position: relative;
+  width: 64px;
+  height: 32px;
+  border-radius: 34px;
+  border: .1px solid var(--input-stroke);
+  transition: 0.4s;
+}
+
+/* Círculo do switch (o botão que desliza) desativado */
+.switch-image{
+  width: 3;
+}
+
+.switch-image:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  top: 2px;
+  left: 2px;
+  bottom: 4px;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .switch-image:before{
+  top: 2px;
+  left: 8px;
+  bottom: 4px;
+  background-color: white;
+}
+
+/* Altera o fundo do switch quando estiver ativo (checkbox marcado) */
+input:checked+.switch-image:before {
+  background-color: var(--text-heading);
+  transform: translateX(26px);
+}
+
+
+/* Estilo do texto "Escuro" */
+.switch span {
+  font: var(--body-sm);
+  color: var(--text-heading);
+}
+
+/* Alterar o texto do span quando o checkbox estiver marcado */
+input:checked + .switch-image + .theme-text::before {
+  content: "Claro"; /* Mostra o texto "Claro" */
+  
+}
+
+.theme-text::before {
+  content: "Escuro"; /* Mostra o texto "Escuro" por padrão */
+
+}
+
+input:checked + .switch-image {
+  background-color: var(--brand-light); /* Fundo azul quando ativo */
+ 
+}

@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font: var(--body-md);
 }
 
-:root{
+:root {
 
   --font-family_leckerli: "Leckerli One", cursive;
   --font-family_baloo2: "Baloo 2", sans-serif;
@@ -15,11 +15,11 @@
   --font-logo: 400 2.5rem/3rem var(--font-family_leckerli);
 
   --heading-md: 700 1.75rem/2.1rem var(--font-family_baloo2);
-  --heading-sm: 700 1.125rem/1.35rem var(--font-family_baloo2);   
- 
+  --heading-sm: 700 1.125rem/1.35rem var(--font-family_baloo2);
+
   --body-md: 400 1rem/1.2rem var(--font-family_Open_Sans);
   --body-sm: 400 .875rem/1.05rem var(--font-family_Open_Sans);
-  --body-xs: 400 .75rem/0.9rem var(--font-family_Open_Sans); 
+  --body-xs: 400 .75rem/0.9rem var(--font-family_Open_Sans);
 
 
   /*cores*/
@@ -46,32 +46,48 @@
 
 }
 
-body{ 
+body {
   /*garantir que nunca tenha rolagem*/
-overflow: hidden;
- font: var(--body-md);;
- color:var(--text-heading);
+  background-color: #29292E;
+  overflow: hidden;
+  font: var(--body-md);
+  color: var(--text-heading);
+ 
 }
 
 h1 {
-font: var(--font-logo);
-color: #FF598B ;
-}
-
-
-img{ 
-  max-width: 100%; /*imagem se encaixar no tamanho da tela*/
-  height: auto;
- }
+  font: var(--font-logo);
+  color: #FF598B;
 
  
+}
 
- .flex-2 { /*separação em duas colunas*/
-  display: flex;
-  align-items: center; /* Alinha os itens ao centro verticalmente */
+img {
+  max-width: 100%;
+  /*imagem se encaixar no tamanho da tela*/
+  height: auto;
+}
+
+span {
+  font: var(--body-sm);
 
 }
 
-.gap { /*gap padrão*/
+
+.flex-2 {
+  /*separação em duas colunas*/
+  display: flex;
+  align-items: center;
+  /* Alinha os itens ao centro verticalmente */
+
+}
+
+.gap {
+  /*gap padrão*/
   gap: 16px;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
 }

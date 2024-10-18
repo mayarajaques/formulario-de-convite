@@ -1,66 +1,157 @@
+/*escondendo o radio*/
 
-.radio-wrapper { /*posição do radio*/
+
+.radio-wrapper {
+  /*------------------Configuração do radio presencial e online-----------------*/
   display: flex;
   justify-content: space-evenly;
   width: 272px;
   height: 48px;
-  border: 1px solid var(--input-stroke);
+  border: 1px solid transparent;
+  outline: 1px solid var(--input-stroke);
   border-radius: 8px;
 }
 
+/*efeito interno do radio*/
 .radio-inner {
   width: 100%;
   height: 100%;
   padding: 4px;
-  
+ 
 
-/*ao clicar*/
+
+  /*efeito ao clicar*/
   & input:focus {
     background-color: var(--shape-button);
-  
-      color: var(--text-heading);
-
+    color: var(--text-heading);
   }
-  }
-
-/* esconder o botao radio*/
-.radio-wrapper input[type="radio"] {
-  position: absolute;
-  display: none;
-
 }
-
 
 .radio-wrapper label {
+  /* position: relative; */
   display: flex;
-  margin: 0px; /*tirando a margem padrao*/
+  margin: 0px;
+  /*tirando a margem padrao*/
   align-items: center;
   cursor: pointer;
-  gap: 8px; /*espaçamento entre os botoes*/
- 
+  gap: 8px;
   justify-content: center;
   height: 100%;
-  width: 100%;  
+  width: 100%;
 }
 
-
- .radio-wrapper input[type="radio"]:checked+label {
+/*efeito ao clicar no radio de presencial e remoto*/
+.radio-wrapper input[type="radio"]:checked+label {
   border-radius: 4px;
   background-color: var(--shape-button);
   color: var(--text-heading);
-  transition: background .8s; /*efeito botao*/
+  transition: background .8s;
+  /*efeito botao*/
 
 
-    /* pegando o svg no html */
+  /* pegando o svg no html */
   & svg path {
-    stroke: var(--brand-light); 
-      /* trocar a cor do svg */
-   } 
-} 
+    stroke: var(--brand-light);
+    /* trocar a cor do svg */
+  }
+}
+
+
+/*---------------------Configuração do radio de cores*---------------------/
+
+/*aplicando margem na label 'Cor Principal'*/
+fieldset>section>label {
+  margin-bottom: 16px;
+}
+
+/*classe para definir configuração de cada radio de cor*/
+.radio-wrapper-color {
+  display: flex;
+  justify-content: space-around;
+  border: .5px solid transparent;
+
+  label {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+
+
+}
+
+/*efeito ao clicar na radio de cor*/
+.radio-wrapper-color input[type="radio"]:checked+label {
+
+  outline: 3px solid var(--brand-light);
+  /*Borda ao redor do contêiner*/
+  border-radius: 50%;
+  /*Arredondar cantos, se necessário*/
+}
+
+
+/*---------------------Configuração do radio de temas---------------------*/
+
+fieldset>label {
+  margin: 28px 0px 16px;
+
+}
+
+.flex-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  
 
 
 
+  .radio-wrapper-type {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--shape-button);
+    border-radius: 8px;
+    padding: 4px 4px 8px 4px;
+    height: 103px;
+    width: 134px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    
 
+
+
+  }
+
+  label {
+    text-align: center;
+  }
+
+  /* Espaçamento entre a imagem e o texto */
+  label img {
+    display: block;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+
+  }
+
+  /*ao clicar*/
+  & input img:focus {
+    background-color: var(--shape-button);
+    color: var(--text-heading);
+  }
+}
+
+
+.radio-wrapper-type input[type="radio"]:checked+label {
+  border: 2px solid var(--brand-light);
+  background-color: var(--shape-button);
+  border-radius: 8px;
+}
+
+.radio-wrapper-type:hover {
+
+  background-color: var(--shape-hover);
+}
 
 
 

@@ -2,7 +2,7 @@
 
 legend {
    font: var(--heading-sm);
-  
+ 
 }
 
 
@@ -25,7 +25,7 @@ fieldset{
 .flex-title{
 display: flex;
 gap: 12px;
-margin-top: 42px;
+margin-bottom: 26px;
 align-items: center;
   
 }

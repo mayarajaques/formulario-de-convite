@@ -64,7 +64,7 @@ main {
   padding: 80px;
   background-color: var(--shape-body);
   border-radius: 1.25rem;
-  height: 100%;
+  height: auto;
 
   & .main-container {
     max-width: 560px;
@@ -75,6 +75,8 @@ main {
   p {
     font: var(--heading-md);
     color: var(--text-heading);
+    margin-bottom: 40px;
+
 
   }
 

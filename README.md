@@ -14,8 +14,18 @@
 <br>
 
 <p align="center">
+   Utilizado input do tipo, text, radio, checkbox e file.
+  <br>
   <img alt="projeto formulario de convite" src=".github/Screenshot_1.png" width="100%">
+  <br>
+    <br>
+  Utilizado javascript para pegar o nome do arquivo ao realizar o input do arquivo.
+  <br>
   <img alt="projeto formulario de convite" src=".github/Screenshot_2.png" width="100%">
+  <br>
+    <br>
+  Adicionado obrigatoriedade no campo e pattern
+  <br>
    <img alt="projeto formulario de convite" src=".github/Screenshot_3.png" width="100%">
 </p>
 

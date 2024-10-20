@@ -1,4 +1,4 @@
-<h1 align="center"> Local Turistico </h1>
+<h1 align="center"> Formulário de Convite </h1>
 
 <p align="center">
   Este é o terceiro projeto que desenvolvi com os conceitos que aprendi do curso da Rocketseat.<br>

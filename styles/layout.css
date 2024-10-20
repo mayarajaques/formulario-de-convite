@@ -8,9 +8,7 @@
   /*vh é toda a parte visivel da tela*/
   overflow: hidden;
   /*garantindo novamente para n ter rolagem*/
-
 }
-
 
 aside {
   /*toda a caixa*/
@@ -22,8 +20,8 @@ aside {
   border-radius: 20px;
   height: 100%;
 
+
   .aside-container {
-    /*container*/
 
     background-image: url(/assets/image/Background.png);
     /* tamanho maximo do background*/
@@ -41,20 +39,24 @@ aside {
     height: 3rem;
     margin-bottom: 1rem;
     margin-top: 32px;
+    margin-left: 32px;
 
   }
 
   & p {
     font: var(--body-md);
+    margin-left: 32px;
     color: var(--text-heading);
-
+    margin-top: 4px;
   }
 
 }
 
+
 main {
 
-  width: 860px; /*total do main*/
+  width: 860px;
+  /*total do main*/
   overflow: auto;
   padding: 80px 130px 20px 130px;
 
@@ -72,9 +74,10 @@ main {
     font: var(--heading-md);
     color: var(--text-heading);
     margin-bottom: 42px;
-    
+
   }
 }
+
 /*classe que cria a divisao no final da pagina*/
 .layout-divider {
   width: 100%;

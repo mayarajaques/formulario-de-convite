@@ -3,7 +3,6 @@ button{
 
 }
 
-
 .button-wrapper {
   display: flex;
   align-items: center;
@@ -20,7 +19,6 @@ button{
     font-weight: 600;
     cursor: pointer;
   }
-
 
 }
 

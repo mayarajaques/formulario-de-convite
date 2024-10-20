@@ -7,13 +7,8 @@ fieldset {
   display: grid;
 }
 
-
 .flex-2 {
-  /*separação em duas colunas*/
   display: flex;
-  /* align-items: center; */
-  /* Alinha os itens ao centro verticalmente */
-
 }
 
 .gap {

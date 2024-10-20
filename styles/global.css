@@ -59,6 +59,8 @@ body {
 h1 {
   font: var(--font-logo);
   color: #FF598B;
+  margin-left: 32px;
+ 
 
  
 }

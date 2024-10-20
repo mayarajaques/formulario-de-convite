@@ -18,8 +18,6 @@
   height: 100%;
   padding: 4px;
 
-
-
   /*efeito ao clicar*/
   & input:focus {
     background-color: var(--shape-button);
@@ -28,25 +26,7 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .radio-wrapper label {
-  /* position: relative; */
   display: flex;
   margin: 0px;
   /*tirando a margem padrao*/
@@ -75,7 +55,6 @@
   }
 }
 
-
 /*---------------------Configuração do radio de cores*---------------------/
 
 /*aplicando margem na label 'Cor Principal'*/
@@ -94,8 +73,6 @@ fieldset>section>label {
     width: 40px;
     cursor: pointer;
   }
-
-
 }
 
 /*efeito ao clicar na radio de cor*/
@@ -106,7 +83,6 @@ fieldset>section>label {
   border-radius: 50%;
   /*Arredondar cantos, se necessário*/
 }
-
 
 /*---------------------Configuração do radio de temas---------------------*/
 
@@ -120,8 +96,6 @@ fieldset>label {
   flex-wrap: wrap;
   gap: 8px;
 
-
-
   .radio-wrapper-type {
     display: flex;
     flex-direction: column;
@@ -134,7 +108,6 @@ fieldset>label {
     outline: 2px solid transparent;
     /*para nao mexer a imagem*/
     box-sizing: border-box;
-
 
     img {
       border-radius: 4px;
@@ -158,7 +131,6 @@ fieldset>label {
     margin-bottom: 8px;
     cursor: pointer;
 
-
   }
 
   /*ao clicar*/
@@ -168,17 +140,13 @@ fieldset>label {
   }
 }
 
-
 .radio-wrapper-type input[type="radio"]:checked+label {
   outline: 3px solid var(--brand-light);
   /*para nao mexer a imagem*/
-  /* border: 0.1px solid var(--brand-light);  */
   background-color: var(--shape-button);
   border-radius: 8px;
-
 }
 
 .radio-wrapper-type:hover {
-
   background-color: var(--shape-hover);
 }

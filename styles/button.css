@@ -1,0 +1,36 @@
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 177px;
+  height: 48px;
+  background: var(--brand-dark);
+  border-radius: 8px;
+  margin-left: auto;
+
+  label {
+    font-weight: 600;
+  }
+
+
+}
+
+.button-wrapper button {
+  appearance: none;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.button-wrapper img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  /* Adiciona espaçamento entre a imagem e o texto */
+}
+
+.button-wrapper:hover {
+
+  background: var(--brand-mid);
+}

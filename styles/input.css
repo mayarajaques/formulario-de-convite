@@ -23,26 +23,37 @@ label {
   display: block;
   font: var(--body-sm);
   color: var(--text-body);
-  /* margin: 16px 0px 12px; */
-  /*margin padrao das labels*/
+
 }
 
-
-
-.title_input {
+.tittle_input {
   margin: 16px 0px 12px;
+  
+
+  & input{
+    /* opacity: 0; */
+    /* font: var(--body-md); */
+  }
+ 
 }
+
+input[type="datetime-local"]{
+  font: var(--body-md);
+  font-size: 16px;
+}
+
 
 /*configs inputs*/
 .input-wrapper {
+
   display: grid;
   width: 100%;
 
-
   & input {
     height: 48px;
+    width: 100%;
 
-
+    
     &::-webkit-calendar-picker-indicator {
       /*tirar desenho calendario*/
       opacity: 0;
@@ -61,12 +72,15 @@ label {
 input:focus,
 textarea:focus,
 
-input[type="datetime-local"]:focus {
+input[type=""]:focus {
   color: var(--text-heading);
   outline: 1px solid var(--brand-light);
   /*aplica a cor ao redor do inputdo lado de fora-- quando clicar*/
 
   outline-offset: .1px;
   /*para funcionar as cores acima no navegador safari*/
+}
 
+#address {
+  width: 272px;
 }

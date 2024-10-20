@@ -1,0 +1,73 @@
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 0px;
+  gap: 8.5px;
+  padding-bottom: 48px;
+  cursor: pointer;
+
+
+
+
+}
+
+.checkbox-inner {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  align-items: center;
+  position: relative;
+  
+
+  label{
+    cursor: pointer;
+  }
+  
+
+  input {
+    appearance: none;
+    padding: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    position: relative;
+  
+  }
+
+
+  mark {
+    background-color: transparent;
+    color: var(--brand-light);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+
+
+
+  .check-image{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+
+    top: 50%;
+    left: 1.9%;
+
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+  
+  }
+
+  
+  &:has(:checked) {
+
+    & .check-image {
+      background-image: url(/assets/image/icon/check.svg) ;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+}

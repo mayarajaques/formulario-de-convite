@@ -1,33 +1,33 @@
-
-
-legend {
-   font: var(--heading-sm);
- 
+::placeholder {
+  font: var(--body-md);
 }
 
-
-fieldset{
+fieldset {
   border: none;
   display: grid;
-  
- 
 }
 
 /*padrao titulos dos inputs*/
 .title {
- 
-  display: block; 
+
+  display: block;
   /* para mexer na margem */
   margin-top: 24px;
- }
-
- /*flex da cessão*/
-.flex-title{
-display: flex;
-gap: 12px;
-margin-bottom: 26px;
-align-items: center;
-  
 }
 
+/**/
+#tittle-first {
+  margin-top: 42px;
+}
+
+
+/*classe para as legendas*/
+.legend {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  align-items: center;
+  margin-top: 50px;
+  font: var(--heading-sm);
+}
 

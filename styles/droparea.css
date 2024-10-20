@@ -1,14 +1,73 @@
 input[type="file"] {
-  opacity: 0;
+  height: 0px;
+  width: 0px;
+  display: none;
 }
 
 .flex-col {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
 
-  img {
+}
+
+.droparea-wrapper {
+  
+  width: 368px;
+
+  label {
+    margin-bottom: 12px;
+  }
+
+
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+
+  label img {
     width: 16px;
     height: 16px;
+    
   }
+
+  .select-wrapper {
+    display: flex;
+    width: 365px;
+    gap: 12px;
+   
+
+
+  }
+
+  .select-wrapper label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    width: 119px;
+    height: 40px;
+    cursor: pointer;
+
+    background-color: var(--shape-button);
+    color: var(--text-heading);
+    border-radius: 8px;
+    padding: 4px 12px;
+    
+  }
+
+  .select-hover :hover{
+    background-color: var(--shape-hover);
+  }
+
+  .file-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px ;
+
+    font: var(--body-md);
+    color: var(--input-placeholder);
+
+  }
+
 }
+
+

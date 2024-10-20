@@ -27,7 +27,7 @@
   }
 }
 
-.radio-wrapper label {
+.radio-wrapper label  {
   /* position: relative; */
   display: flex;
   margin: 0px;
@@ -38,6 +38,7 @@
   justify-content: center;
   height: 100%;
   width: 100%;
+  font-weight: 600;
 }
 
 /*efeito ao clicar no radio de presencial e remoto*/
@@ -103,7 +104,6 @@ fieldset>label {
   
 
 
-
   .radio-wrapper-type {
     display: flex;
     flex-direction: column;
@@ -116,8 +116,6 @@ fieldset>label {
     border: 2px solid transparent;
     outline: 1px solid transparent;
     
-
-
 
   }
 

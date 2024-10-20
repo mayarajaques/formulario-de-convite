@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: var(--body-md);
+  /* font: var(--body-sm); */
 }
+
 
 :root {
 
@@ -12,14 +13,14 @@
   --font-family_Open_Sans: "Open Sans", sans-serif;
 
   /*tamanho fontes*/
-  --font-logo: 400 2.5rem/3rem var(--font-family_leckerli);
+  --font-logo: 400 40px/3rem var(--font-family_leckerli);
 
-  --heading-md: 700 1.75rem/2.1rem var(--font-family_baloo2);
-  --heading-sm: 700 1.125rem/1.35rem var(--font-family_baloo2);
+  --heading-md: 700 28px/2.1rem var(--font-family_baloo2);
+  --heading-sm: 700 18px/1.35rem var(--font-family_baloo2);
 
-  --body-md: 400 1rem/1.2rem var(--font-family_Open_Sans);
-  --body-sm: 400 .875rem/1.05rem var(--font-family_Open_Sans);
-  --body-xs: 400 .75rem/0.9rem var(--font-family_Open_Sans);
+  --body-md: 400 16px/1.2rem var(--font-family_Open_Sans);
+  --body-sm: 400 14px/1.05rem var(--font-family_Open_Sans);
+  --body-xs: 400 12px/0.9rem var(--font-family_Open_Sans);
 
 
   /*cores*/
@@ -87,7 +88,3 @@ span {
   gap: 16px;
 }
 
-.flex-col{
-  display: flex;
-  flex-direction: column;
-}

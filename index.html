@@ -39,24 +39,24 @@
         <form method="post">
           <fieldset>
             <section>
-              <div class="flex-title">
+              <div class="tittle-first legend">
                 <img src="assets/image/icon/calendario.svg" alt="icone de calendario">
                 <legend class="">Sobre o evento</legend>
               </div>
 
               <div class="input-wrapper">
-                <label class="title_input" for="title">Titulo</label>
+                <label class="tittle_input" for="title">Titulo</label>
                 <input id="title" name="title" type="text" placeholder="Nome do evento">
               </div>
 
               <div class="input-wrapper grid-date gap">
                 <div>
-                  <label class="title_input" for="data_inicio">Início</label>
+                  <label class="tittle_input" for="data_inicio">Início</label>
                   <input id="data_inicio" name="data_inicio" type="datetime-local" lang="pt-br">
                 </div>
 
                 <div>
-                  <label class="title_input" for="data_fim">Fim</label>
+                  <label class="tittle_input" for="data_fim">Fim</label>
                   <input id="data_fim" name="data_fim" type="datetime-local" lang="pt-br">
                 </div>
               </div>
@@ -66,8 +66,9 @@
           <div class="flex-2 gap">
             <fieldset>
               <section>
-                <label class="title_input" for="present">Tipo</label>
+                <label class="tittle_input" for="present">Tipo</label>
                 <div class="radio-wrapper">
+
                   <div class="radio-inner">
                     <input id="present" name="type-shift" value="present" type="radio">
                     <label for="present">
@@ -105,20 +106,19 @@
 
             <section>
               <div class="input-wrapper">
-                <label class="title_input" for="adress">Local</label>
-                <input id="adress" name="adress" type="text" placeholder="Link ou endereço">
+                <label class="tittle_input" for="address">Local</label>
+                <input id="address" name="address" type="text" placeholder="Link ou endereço">
               </div>
           </div>
           </section>
 
           <section>
-            <label class="title_input" for="description">Descrição</label>
-            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"
-              required></textarea>
+            <label class="tittle_input" for="description">Descrição</label>
+            <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
           </section>
 
           <fieldset>
-            <div class="flex-title">
+            <div class="legend">
               <img src="assets/image/icon/paintbrush-vertical.svg" alt="icone de pincel">
               <legend>Personalização</legend>
             </div>
@@ -293,39 +293,96 @@
           </fieldset>
 
           <fieldset>
-            <div class="flex-col">         
-            <label class="switch-label" for="theme-switch">Estilo
-            <div class="switch">
-              <input type="checkbox" id="theme-switch"/>
-              <div class="switch-image"></div>
-            </label>
-              <span class="theme-text"></span>
-            </div>
-              
-            <div class="flex-col">      
+            <div class="flex-col">
+              <label class="switch-label" for="theme-switch">Estilo
+                <div class="switch">
+                  <input type="checkbox" id="theme-switch" name="theme-switch" />
+                  <div class="switch-image">
+                  </div>
+                  <span class="theme-text">
+                </div>
+              </label>
+              </span>
               <div class="droparea-wrapper">
                 <label for="">Foto de capa</label>
-                <div>
-                  <input type="file">
-                  <label><img src="assets/image/icon/upload.svg" alt="icone de upload">Selecionar</label>
+                <div class="select-wrapper">
+                  <div class="select-hover">
+                  <input type="file" id="file" name="file">
+                  <label for="file"><img src="assets/image/icon/upload.svg" alt="icone de upload">Selecionar</label></div>
+                  <span class="file-text">Nenhum arquivo selecionado</span>
                 </div>
               </div>
-                  <span class="file-text"></span>
-
-        </div>
-      </div>
-
+            </div>
           </fieldset>
 
+          <fieldset>
+            <section>
+              <div class="legend">
+                <img src="assets/image/icon/contact.svg" alt="icone de contato">
+                <legend>Dados para contato</legend>
+              </div>
 
+              <div class="input-wrapper">
+                <label class="tittle_input" for="title">Nome</label>
+                <input id="title" name="title" type="text" placeholder="Nome completo" required>
+              </div>
 
+              <div class="flex-2 gap">
+                <div class="input-wrapper ">
+                  <label class="tittle_input" for="email">E-mail</label>
+                  <input id="email" name="email" type="email" placeholder="exemplo@email.com">
+                </div>
+                <div class="input-wrapper">
+                  <label class="tittle_input" for="phone">Telefone</label>
+                  <input id="phone" name="phone" type="tel" placeholder="(99) 99999-9999">
+                </div>
+              </div>
+            </section>
+          </fieldset>
 
+          <div class="layout-divider"></div>
 
+          <footer>
+            <div class="checkbox-wrapper">
+              <div class="checkbox-inner">
+                <input type="checkbox" id="read-terms" value="read-terms" name="terms">
+                <label for="read-terms">
+                  <span>Li e concordo com os <mark>Termos e Condições</mark> e com a <mark>Política de Privacidade</mark></span>
+                  <div class="check-image"></div>
+                </label>
+              </div>
+          
+              <div class="checkbox-inner">
+                <input type="checkbox" id="promotional-email" value="promotional-email" name="promotions">
+                <label for="promotional-email">
+                  <span>Aceito receber atualizações e promoções por e-mail</span>
+                  <div class="check-image"></div>
+                </label>
+              </div>
+          
+              <div class="checkbox-inner">
+                <input type="checkbox" id="promotional-sms" value="promotional-sms" name="promotions">
+                <label for="promotional-sms">
+                  <span>Aceito receber atualizações e promoções por SMS</span>
+                  <div class="check-image"></div>
+                </label>
+              </div>
+            </div>
+          
+            <div class="button-wrapper">
+            <button type="button">
+              <img src="/assets/image/icon/ticket.svg" alt="icone de ingresso">
+              <label>Gerar Convite</label>
+            </button>
+          </div>
+          </footer>
         </form>
 
       </div>
     </main>
   </div>
+
+  <script src="/script/controlfile.js"></script>
 </body>
 
 </html>

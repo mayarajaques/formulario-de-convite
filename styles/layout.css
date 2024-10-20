@@ -19,7 +19,7 @@ aside {
   max-height: 48rem;
   background-color: var(--shape-background);
   padding: 20px 0px 20px 20px;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   height: 100%;
 
   .aside-container {
@@ -60,14 +60,16 @@ aside {
 
 main {
 
+  width: 860px; /*total do main*/
   overflow: auto;
-  padding: 80px;
+  padding: 80px 130px 20px 130px;
+
   background-color: var(--shape-body);
   border-radius: 1.25rem;
   height: auto;
 
   & .main-container {
-    max-width: 560px;
+    width: 560px;
     /*maximo ocupação da pagina*/
 
   }
@@ -79,6 +81,12 @@ main {
 
 
   }
-
-
+}
+/*classe que cria a divisao no final da pagina*/
+.layout-divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 48px;
+  margin-bottom: 40px;
+  background-color: var(--input-stroke);
 }

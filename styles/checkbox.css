@@ -64,7 +64,7 @@
   &:has(:checked) {
 
     & .check-image {
-      background-image: url("assets/image/icon/check.svg") ;
+      background-image: url("/assets/image/icon/check.svg") ;
       background-size: contain;
       background-repeat: no-repeat;
     }

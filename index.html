@@ -39,7 +39,7 @@
         <form method="post">
           <fieldset>
             <section>
-              <div class="tittle-first legend">
+              <div id="title-first">
                 <img src="assets/image/icon/calendario.svg" alt="icone de calendario">
                 <legend class="">Sobre o evento</legend>
               </div>
@@ -52,12 +52,12 @@
               <div class="input-wrapper grid-date gap">
                 <div>
                   <label class="tittle_input" for="data_inicio">Início</label>
-                  <input id="data_inicio" name="data_inicio" type="datetime-local" lang="pt-br">
+                  <input id="data_inicio" name="data_inicio" type="datetime" placeholder="DD/MM/AAAA, --:--" lang="pt-br">
                 </div>
 
                 <div>
                   <label class="tittle_input" for="data_fim">Fim</label>
-                  <input id="data_fim" name="data_fim" type="datetime-local" lang="pt-br">
+                  <input id="data_fim" name="data_fim" type="datetime" lang="pt-br" placeholder="DD/MM/AAAA, --:--">
                 </div>
               </div>
             </section>
@@ -213,11 +213,12 @@
 
               <div class="radio-wrapper-type">
                 <input type="radio" name="theme" id="graduation" />
-                <label for="graduation">
-                  <img src="assets/image/theme/Image-3.png" alt="imagem de tema de formatura">
-                  <span>Formatura</span>
-                </label>
-              </div>
+                  <label for="graduation">
+                    <img src="assets/image/theme/Image-3.png" alt="imagem de tema de formatura">
+                    <span>Formatura</span>
+                  </label>
+                </div>
+          
 
               <div class="radio-wrapper-type">
                 <input type="radio" name="theme" id="marriage" />
@@ -307,8 +308,9 @@
                 <label for="">Foto de capa</label>
                 <div class="select-wrapper">
                   <div class="select-hover">
-                  <input type="file" id="file" name="file">
-                  <label for="file"><img src="assets/image/icon/upload.svg" alt="icone de upload">Selecionar</label></div>
+                    <input type="file" id="file" name="file">
+                    <label for="file"><img src="assets/image/icon/upload.svg" alt="icone de upload">Selecionar</label>
+                  </div>
                   <span class="file-text">Nenhum arquivo selecionado</span>
                 </div>
               </div>
@@ -325,19 +327,38 @@
               <div class="input-wrapper">
                 <label class="tittle_input" for="title">Nome</label>
                 <input id="title" name="title" type="text" placeholder="Nome completo" required>
+        
+                <div class="error obrigatory">
+                  <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
+                  <em>Campo obrigatório</em>
+
+                </div>
               </div>
 
               <div class="flex-2 gap">
-                <div class="input-wrapper ">
-                  <label class="tittle_input" for="email">E-mail</label>
-                  <input id="email" name="email" type="email" placeholder="exemplo@email.com">
-                </div>
                 <div class="input-wrapper">
-                  <label class="tittle_input" for="phone">Telefone</label>
-                  <input id="phone" name="phone" type="tel" placeholder="(99) 99999-9999">
+                  <label class="tittle_input" for="email">E-mail</label>
+                  <input id="email" name="email" type="email" required placeholder="exemplo@email.com">
+                  
+                  <div class="error">
+                    <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
+                    <em>E-mail inválido</em>
+                  </div>
                 </div>
-              </div>
-            </section>
+                    
+                  <div class="input-wrapper">
+                    <label class="tittle_input" for="phone">Telefone</label>
+                    <input id="phone" name="phone" type="tel" required 
+                    pattern="\(\d{2}\) \d{5}-\d{4}|\(\d{2}\) \d{4}-\d{4}"
+                    placeholder="(99) 99999-9999">
+                    <div class="error">
+                      <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
+                      <em>Telefone inválido - Use (XX) XXXXX-XXXX</em>
+
+                    </div>
+                  </div>
+                </div>
+              </section>
           </fieldset>
 
           <div class="layout-divider"></div>
@@ -347,11 +368,12 @@
               <div class="checkbox-inner">
                 <input type="checkbox" id="read-terms" value="read-terms" name="terms">
                 <label for="read-terms">
-                  <span>Li e concordo com os <mark>Termos e Condições</mark> e com a <mark>Política de Privacidade</mark></span>
+                  <span>Li e concordo com os <mark>Termos e Condições</mark> e com a <mark>Política de
+                      Privacidade</mark></span>
                   <div class="check-image"></div>
                 </label>
               </div>
-          
+
               <div class="checkbox-inner">
                 <input type="checkbox" id="promotional-email" value="promotional-email" name="promotions">
                 <label for="promotional-email">
@@ -359,7 +381,7 @@
                   <div class="check-image"></div>
                 </label>
               </div>
-          
+
               <div class="checkbox-inner">
                 <input type="checkbox" id="promotional-sms" value="promotional-sms" name="promotions">
                 <label for="promotional-sms">
@@ -368,13 +390,13 @@
                 </label>
               </div>
             </div>
-          
+
             <div class="button-wrapper">
-            <button type="button">
-              <img src="/assets/image/icon/ticket.svg" alt="icone de ingresso">
-              <label>Gerar Convite</label>
-            </button>
-          </div>
+              <button type="button">
+                <img src="/assets/image/icon/ticket.svg" alt="icone de ingresso">
+                <label>Gerar Convite</label>
+              </button>
+            </div>
           </footer>
         </form>
 

@@ -18,7 +18,7 @@
   --heading-md: 700 28px/2.1rem var(--font-family_baloo2);
   --heading-sm: 700 18px/1.35rem var(--font-family_baloo2);
 
-  --body-md: 400 16px/1.2rem var(--font-family_Open_Sans);
+  --body-md: 300 16px/1.2rem var(--font-family_Open_Sans);
   --body-sm: 400 14px/1.05rem var(--font-family_Open_Sans);
   --body-xs: 400 12px/0.9rem var(--font-family_Open_Sans);
 
@@ -75,16 +75,4 @@ span {
 }
 
 
-.flex-2 {
-  /*separação em duas colunas*/
-  display: flex;
-  align-items: center;
-  /* Alinha os itens ao centro verticalmente */
-
-}
-
-.gap {
-  /*gap padrão*/
-  gap: 16px;
-}
 

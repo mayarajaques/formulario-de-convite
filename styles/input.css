@@ -3,8 +3,8 @@ input[type="radio"],
 .switch input {
   display: none;
 
-} 
- 
+}
+
 
 input,
 textarea {
@@ -28,16 +28,34 @@ label {
 
 .tittle_input {
   margin: 16px 0px 12px;
-  
 
-  & input{
-    /* opacity: 0; */
-    /* font: var(--body-md); */
-  }
- 
+
+
 }
 
-input[type="datetime-local"]{
+/*primeiro titulo*/
+#title-first {
+  display: flex;
+  gap: 12px;
+  line-height: 20px;
+  font: var(--heading-sm);
+  margin-bottom: 8px;
+}
+
+
+/*classe para as legendas*/
+.legend {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  align-items: center;
+  margin-top: 50px;
+  font: var(--heading-sm);
+}
+
+
+
+input[type="datetime-local"] {
   font: var(--body-md);
   font-size: 16px;
 }
@@ -48,12 +66,14 @@ input[type="datetime-local"]{
 
   display: grid;
   width: 100%;
+  height: 103px;
+  border: 2px solid transparent;
 
   & input {
     height: 48px;
     width: 100%;
 
-    
+
     &::-webkit-calendar-picker-indicator {
       /*tirar desenho calendario*/
       opacity: 0;
@@ -63,22 +83,79 @@ input[type="datetime-local"]{
   }
 }
 
+.error {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+
+  em {
+    font-style: normal;
+    margin-bottom: 16px;
+    font: var(--body-xs);
+    color: var(--danger);
+
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+
+}
+
+input:placeholder-shown + .error {
+  /* border: 1px solid var(--danger); */
+  display: none; /* Oculta a mensagem de erro se o placeholder está visível */
+
+}
+
+
+input:placeholder-shown + .obrigatory {
+  display: flex; /*alerta mostrando como padrao*/
+  
+}
+
+input:invalid {
+ border: 1px solid var(--danger);
+}
+
+input {
+
+
+  &:not(:focus):valid+.error {
+    /*se input tiver valido e nao estiver em foco e tiver um erro do lado dele, */
+    display: none;
+
+  }
+
+}
+
+
+input:not(:placeholder-shown) {
+  color: var(--text-heading);
+  /* Altera a cor do texto quando o campo não está vazio */
+}
+
+
+input:focus,
+textarea:focus,
+input[type=""]:focus {
+  color: var(--text-heading);
+  outline: 1px solid var(--brand-light);
+  border: .1px solid var(--brand-light);
+  /*aplica a cor ao redor do inputdo lado de fora-- quando clicar*/
+
+
+  outline-offset: .1px;
+  /*para funcionar as cores acima no navegador safari*/
+}
+
+
+
 /*config input date*/
 .grid-date {
   grid-template-columns: 272px 272px;
 
-}
-
-input:focus,
-textarea:focus,
-
-input[type=""]:focus {
-  color: var(--text-heading);
-  outline: 1px solid var(--brand-light);
-  /*aplica a cor ao redor do inputdo lado de fora-- quando clicar*/
-
-  outline-offset: .1px;
-  /*para funcionar as cores acima no navegador safari*/
 }
 
 #address {

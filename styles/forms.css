@@ -7,27 +7,16 @@ fieldset {
   display: grid;
 }
 
-/*padrao titulos dos inputs*/
-.title {
 
-  display: block;
-  /* para mexer na margem */
-  margin-top: 24px;
-}
-
-/**/
-#tittle-first {
-  margin-top: 42px;
-}
-
-
-/*classe para as legendas*/
-.legend {
+.flex-2 {
+  /*separação em duas colunas*/
   display: flex;
-  gap: 12px;
-  margin-bottom: 24px;
-  align-items: center;
-  margin-top: 50px;
-  font: var(--heading-sm);
+  /* align-items: center; */
+  /* Alinha os itens ao centro verticalmente */
+
 }
 
+.gap {
+  /*gap padrão*/
+  gap: 16px;
+}

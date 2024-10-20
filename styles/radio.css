@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
   padding: 4px;
- 
+
 
 
   /*efeito ao clicar*/
@@ -27,7 +27,25 @@
   }
 }
 
-.radio-wrapper label  {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.radio-wrapper label {
   /* position: relative; */
   display: flex;
   margin: 0px;
@@ -101,7 +119,7 @@ fieldset>label {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  
+
 
 
   .radio-wrapper-type {
@@ -109,13 +127,24 @@ fieldset>label {
     flex-direction: column;
     background-color: var(--shape-button);
     border-radius: 8px;
-    padding: 4px 4px 8px 4px;
+
     height: 103px;
     width: 134px;
     cursor: pointer;
-    border: 2px solid transparent;
-    outline: 1px solid transparent;
-    
+    outline: 2px solid transparent;
+    /*para nao mexer a imagem*/
+    box-sizing: border-box;
+
+
+    img {
+      border-radius: 4px;
+      padding: 4px 4px 0px 4px;
+    }
+
+    span {
+      display: inline-block;
+      padding-bottom: 8px;
+    }
 
   }
 
@@ -141,15 +170,15 @@ fieldset>label {
 
 
 .radio-wrapper-type input[type="radio"]:checked+label {
-  border: 2px solid var(--brand-light);
+  outline: 3px solid var(--brand-light);
+  /*para nao mexer a imagem*/
+  /* border: 0.1px solid var(--brand-light);  */
   background-color: var(--shape-button);
   border-radius: 8px;
+
 }
 
 .radio-wrapper-type:hover {
 
   background-color: var(--shape-hover);
 }
-
-
-

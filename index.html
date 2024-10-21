@@ -36,7 +36,7 @@
         </div>
 
 
-        <form method="post">
+        <form method="get">
           <fieldset>
             <section>
               <div id="title-first">
@@ -52,12 +52,23 @@
               <div class="input-wrapper grid-date gap">
                 <div>
                   <label class="tittle_input" for="data_inicio">Início</label>
-                  <input id="data_inicio" name="data_inicio" type="datetime" placeholder="DD/MM/AAAA, --:--" lang="pt-br">
+                  <input id="data_inicio" name="data_inicio" type="datetime" pattern="\d{2}/\d{2}/\d{4} \d{2}:\d{2}"
+                    placeholder="DD/MM/AAAA, --:--" lang="pt-br">
+                  <div class="error">
+                    <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
+                    <em>Data inválida - Use DD/MM/YYYY HH:MM </em>
+                  </div>
+
                 </div>
 
                 <div>
                   <label class="tittle_input" for="data_fim">Fim</label>
-                  <input id="data_fim" name="data_fim" type="datetime" lang="pt-br" placeholder="DD/MM/AAAA, --:--">
+                  <input id="data_fim" name="data_fim" type="datetime" lang="pt-br"
+                    pattern="\d{2}/\d{2}/\d{4} \d{2}:\d{2}" placeholder="DD/MM/AAAA, --:--">
+                  <div class="error">
+                    <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
+                    <em>Data inválida - Use DD/MM/YYYY HH:MM </em>
+                  </div>
                 </div>
               </div>
             </section>
@@ -213,12 +224,12 @@
 
               <div class="radio-wrapper-type">
                 <input type="radio" name="theme" id="graduation" />
-                  <label for="graduation">
-                    <img src="assets/image/theme/Image-3.png" alt="imagem de tema de formatura">
-                    <span>Formatura</span>
-                  </label>
-                </div>
-          
+                <label for="graduation">
+                  <img src="assets/image/theme/Image-3.png" alt="imagem de tema de formatura">
+                  <span>Formatura</span>
+                </label>
+              </div>
+
 
               <div class="radio-wrapper-type">
                 <input type="radio" name="theme" id="marriage" />
@@ -327,7 +338,7 @@
               <div class="input-wrapper">
                 <label class="tittle_input" for="name">Nome</label>
                 <input id="name" name="name" type="text" placeholder="Nome completo" required>
-        
+
                 <div class="error obrigatory">
                   <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
                   <em>Campo obrigatório</em>
@@ -339,26 +350,24 @@
                 <div class="input-wrapper">
                   <label class="tittle_input" for="email">E-mail</label>
                   <input id="email" name="email" type="email" required placeholder="exemplo@email.com">
-                  
+
                   <div class="error">
                     <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
                     <em>E-mail inválido</em>
                   </div>
                 </div>
-                    
-                  <div class="input-wrapper">
-                    <label class="tittle_input" for="phone">Telefone</label>
-                    <input id="phone" name="phone" type="tel" required 
-                    pattern="\(\d{2}\) \d{5}-\d{4}|\(\d{2}\) \d{4}-\d{4}"
-                    placeholder="(99) 99999-9999">
-                    <div class="error">
-                      <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
-                      <em>Telefone inválido - Use (XX) XXXXX-XXXX</em>
 
-                    </div>
+                <div class="input-wrapper">
+                  <label class="tittle_input" for="phone">Telefone</label>
+                  <input id="phone" name="phone" type="tel" required
+                    pattern="\(\d{2}\) \d{5}-\d{4}|\(\d{2}\) \d{4}-\d{4}" placeholder="(99) 99999-9999">
+                  <div class="error">
+                    <img src="assets/image/icon/circle-alert.svg" alt="icone de alerta">
+                    <em>Telefone inválido - Use (XX) XXXXX-XXXX</em>
                   </div>
                 </div>
-              </section>
+              </div>
+            </section>
           </fieldset>
 
           <div class="layout-divider"></div>
@@ -398,13 +407,14 @@
               </button>
             </div>
           </footer>
+
+          <script src="script/controlfile.js"></script>
         </form>
 
       </div>
     </main>
   </div>
 
-  <script src="script/controlfile.js"></script>
 </body>
 
 </html>

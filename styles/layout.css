@@ -3,12 +3,16 @@
   /*divide as telas*/
   grid-template-columns: 33.87% 62.13%;
   /*calculo da porcentagem de cada coluna*/
+  place-content: center;
+  margin: 0 auto;
+  /*centralizar na tela*/
   height: 100vh;
   width: 1240px;
   /*vh é toda a parte visivel da tela*/
   overflow: hidden;
   /*garantindo novamente para n ter rolagem*/
 }
+
 
 aside {
   /*toda a caixa*/
@@ -26,6 +30,7 @@ aside {
     background-image: url("../assets/image/background.png");
     /* tamanho maximo do background*/
     background-size: 100% 100%;
+    background-position: center;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;

@@ -1,7 +1,7 @@
 <h1 align="center"> Formulário de Convite </h1>
 
 <p align="center">
-  Este é o terceiro projeto que desenvolvi com os conceitos que aprendi do curso da Rocketseat.<br>
+  Este é o terceiro projeto que desenvolvi com os conceitos que aprendi do curso Fullstack da Rocketseat.<br>
   <strong>O objetivo deste projeto é trabalhar os conceitos Grid, Flexbox e Formulários do CSS e HTML.</strong>
 </p>
 
